@@ -1,0 +1,116 @@
+$nav-height: 40px;
+%field-design{
+   display: block;
+   padding: 0 15px;
+   height: $nav_height;
+   line-height: $nav_height;
+   background-color: $color_gray;
+   color: $color_white;
+   cursor: pointer;
+   @include transition();
+}
+.admin-bar{
+   .#{$prefix}-navigation{
+      &.sticky {
+         top: 30px;
+      }
+   }
+  
+}
+.#{$prefix}-navigation{
+   position: relative;
+   &.sticky {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 9;
+      left: 0;
+      .#{$prefix}-left-space{
+         @include media(lg){
+            padding-right: 15px;
+         }
+      }
+      .#{$prefix}-menu-description{
+         display: none !important;
+      }
+   }
+   .#{$prefix}-nav-left-content{
+      display: flex;
+      .#{$prefix}-nav-sidebar-menu{
+         display: flex;
+         padding-top: 10px;
+         .#{$prefix}-mobile-menu-icon{
+            padding-left: 15px;
+            @include media(lg){
+               display: none;
+            }
+            .#{$prefix}-menu-icon{
+               &:before{
+                  width: 80%;
+               }
+            }
+         }
+      }
+      .#{$prefix}-menu-section{
+         display: none;
+         @include media(lg){
+            display: block;
+         }
+      }
+   }
+   .#{$prefix}-nav-right-content{
+      .#{$prefix}-latest-news-button-section{
+         .#{$prefix}-nav-button{
+            height: $nav_height;
+            line-height: $nav_height;
+            padding: 0 15px;
+            cursor: pointer;
+            font-weight: $font_semi_bold;
+            position: relative;
+         }
+      }
+   }
+   .#{$prefix}-search-section{
+      @extend %field-design;
+      &:hover{
+         @extend %secondary-bg;
+      }
+
+   }
+   .theme-mode{
+      a{
+         @extend %field-design;
+         &:hover{
+            @extend %secondary-bg;
+         }
+      }
+   }
+   .#{$prefix}-articles-list{
+      position: absolute;
+      top: 100%;
+      left: 0;
+      height: 0;
+      width: 100%;
+      overflow: hidden;
+      @include transition();
+      z-index: 1;
+      &.#{$prefix}-open{
+          height: 80vh;
+          overflow: scroll;
+          padding: 30px; 
+          @include media(sm){
+              height: initial;
+              overflow: visible;
+          }
+      }
+   }
+   .#{$prefix}-search-field-section{
+      background:$color_dark_gray;
+      padding: 30px 0;
+      display: none;
+      @include media(xs){
+          padding: 30px;
+      }
+  }
+} 
+

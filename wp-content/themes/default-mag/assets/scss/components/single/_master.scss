@@ -1,0 +1,31 @@
+@import 'components';
+@import 'widget';
+@import 'post';
+.wp-block-gallery,
+.widget_media_gallery{
+    .slick-dots{
+       display: none !important;
+    }
+    .slick-arrow{
+        &:before{
+            border-color: $color_secondary;
+        }
+    }
+}
+.widget_media_gallery{
+    .gallery{
+        margin: 0;
+        .gallery-item{
+            padding: 0 7.5px;
+            margin-bottom: 15px;
+            margin-top: 0;
+            .gallery-icon{
+                display: flex;
+                justify-content: center;
+            }
+           
+        }
+       
+
+    }
+}

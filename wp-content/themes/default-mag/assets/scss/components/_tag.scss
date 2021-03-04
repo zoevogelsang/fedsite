@@ -1,0 +1,40 @@
+.#{$prefix}-tag-caption{
+    padding: 0 15px;
+    line-height: $top_bar_height;
+    height: $top_bar_height;
+    position: relative;
+    margin-right: 10px;
+    &:after{
+        content: '';
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: -26px;
+        transform: translateY(-50%);
+        border-color: transparent transparent transparent $color_primary;
+        border-style: solid;
+        border-width: 13px;
+    }
+}
+.#{$prefix}-tags-items{
+    @extend %reset-ul;
+    display: flex;
+    flex-wrap: wrap;
+    li{
+        a{
+            display: inline-block;
+            text-decoration: none;
+            padding: 0 15px;
+            font-weight: $font_semi_bold;
+            font-size: 12px;
+            line-height: $top_bar_height;
+            color: $color_black;
+            &:visited{
+                color: $color_black;
+            }
+            &:hover{
+                color: $color_primary;
+            }
+        }
+    }
+}

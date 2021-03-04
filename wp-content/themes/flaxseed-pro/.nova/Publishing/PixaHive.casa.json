@@ -1,0 +1,15 @@
+{
+  "identifier" : "181ED3FB-A96E-43DE-943F-153F8589B6A3",
+  "ignoredFilePatterns" : [
+    ".git",
+    ".nova*",
+    ".git*",
+    "config.codekit3",
+    ".functions.php.swp",
+    ".zipper.swo",
+    ".zipper.swp"
+  ],
+  "remotePath" : "\/srv\/users\/serverpilot\/apps\/pixahivecasa\/public\/wp-content\/themes\/flaxseed-pro",
+  "server" : "PixaHive.casa",
+  "usesPublishing" : true
+}

@@ -1,0 +1,262 @@
+/*!
+Theme Name: Newsmandu Magazine
+Theme URI: https://www.themesmandu.com/product/newsmandu-magazine
+Author: Themesmandu
+Author URI: https://www.themesmandu.com/
+Description: Newsmandu-Magazine Theme is a clean, modern responsive WordPress theme focused on magazine and news portal sites.  With the organized and attractive layouts, it is much easier to display your robust content throughout the theme. The sample demo content is just one click away with the import feature. This helps you quickly overview what the theme has to offer. Whether you want to have a magazine or newspaper style, this theme works well for both.
+Version: 1.0.6
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: newsmandu-magazine
+Tags: blog, news, custom-background, custom-header, custom-logo, custom-menu, featured-images, footer-widgets, left-sidebar, one-column, right-sidebar, theme-options, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/* -- Skip Link Styles -- */
+
+#top-header {
+    position: relative;
+}
+
+.skip-link {
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+    z-index: 99;
+    padding: 5px 12px;
+    background-color: #000000;
+    margin: 10px;
+    display: inline-block;
+}
+.skip-link:focus {
+    scroll-behavior: smooth;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, .5) !important;
+}
+
+.skip-link:hover {
+    text-decoration: none;
+}
+/* Accessibility */
+/* Text meant only for screen readers. */
+.screen-reader-text {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute !important;
+    width: 1px;
+    word-wrap: normal !important;
+    /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+}
+  
+.screen-reader-text:focus {
+    background-color: #f1f1f1;
+    border-radius: 3px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    clip: auto !important;
+    clip-path: none;
+    color: #21759b;
+    display: block;
+    font-size: 14px;
+    font-size: 0.875rem;
+    font-weight: bold;
+    height: auto;
+    right: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000;
+    /* Above WP toolbar. */
+}
+  
+  /* Do not show the outline on the skip link target. */
+#content[tabindex="-1"]:focus {
+    outline: 0;
+}
+
+/* -- post-gallery figure -- */
+
+.gallery-item a {
+    display: unset;
+}
+
+.gallery-item a:after {
+    content: unset !important;
+}
+
+.gallery figure {
+    display: inline-grid;
+    padding: 2px;
+    margin-bottom: 0;
+}
+
+.gallery figure img {
+    width: 100%;
+    height: auto;
+}
+
+.gallery-columns-1 figure {
+    width: 100%;
+}
+
+.gallery-columns-2 figure {
+    width: 50%;
+}
+
+.gallery-columns-3 figure {
+    width: 33.333333%;
+}
+
+.gallery-columns-4 figure {
+    width: 25%;
+}
+
+.gallery-columns-5 figure {
+    width: 20%;
+}
+
+.gallery-columns-6 figure {
+    width: 16.666667%;
+}
+
+.gallery-columns-7 figure {
+    width: 14.2857%;
+}
+
+.gallery-columns-8 figure {
+    width: 12.5%;
+}
+
+.gallery-columns-9 figure {
+    width: 11.1111%;
+}
+
+.gallery {
+    margin: 0 -1px;
+}
+
+.gallery-columns-5 figure,
+.gallery-columns-6 figure,
+.gallery-columns-7 figure,
+.gallery-columns-8 figure,
+.gallery-columns-9 figure {
+    padding: 1px;
+    margin-bottom: 0;
+}
+
+.gallery-columns-5 figure figcaption,
+.gallery-columns-6 figure figcaption,
+.gallery-columns-7 figure figcaption,
+.gallery-columns-8 figure figcaption,
+.gallery-columns-9 figure figcaption {
+    font-size: 10px;
+}
+
+
+/* --Alignments Styles --- */
+
+.alignleft {
+    display: inline;
+    float: left;
+    margin-right: 1.5em;
+}
+
+.alignright {
+    display: inline;
+    float: right;
+    margin-left: 1.5em;
+}
+
+.aligncenter {
+    clear: both;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figcaption,
+.wp-caption-text,
+.gallery-caption {
+    font-family: NunitoSemiBold;
+    font-size: 14px;
+    color: #6d7683;
+    margin-top: 4px;
+    text-align: center;
+}
+
+.widget .gallery-caption {
+    font-size: 12px;
+}
+
+
+/* -- to the top css -- */
+
+.up-btn {
+    position: fixed;
+    visibility: hidden;
+    bottom: 5%;
+    right: 15px;
+    outline: none;
+    background: rgba(0, 0, 0, .3);
+    padding: 0px;
+    width: 40px;
+    height: 40px;
+    transition: 0.5s;
+    border-radius: 0;
+    border: 1px solid #ffffff;
+    border-right: none;
+    outline: none !important;
+    transition: all .3s;
+    transform: translate3d(100px, 0, 0);
+}
+
+#up-btn:hover {
+    background: #3381f2;
+    border: 1px solid #3381f2;
+    border-right: none;
+}
+
+.up-btn:focus {
+    border-color: #007bff;
+}
+
+#up-btn i {
+    font-size: 18px;
+    transition: .5s;
+    color: #ffffff;
+}
+
+#up-btn:hover i {
+    color: #000000;
+}
+
+.up-btn.ayotothetop {
+    visibility: visible;
+    transform: translate3d(0, 0, 0);
+}
+
+
+/* -- Animation To The Content -- */
+
+@keyframes scroll {
+    0% {
+        right: -163px;
+    }
+    20% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 1;
+    }
+    100% {
+        right: -13px;
+        opacity: 0;
+    }
+}

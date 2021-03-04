@@ -1,0 +1,17 @@
+.desktop .#{$prefix}-main-menu>ul>li .sub-menu>li .sub-menu>li .sub-menu,
+.desktop .#{$prefix}-main-menu>ul>li .children>li .children>li .children{
+    top: 20%;
+    left: 100%;
+    overflow: hidden;
+    visibility: hidden;
+}
+.desktop .#{$prefix}-main-menu>ul>li .sub-menu>li .sub-menu>li:hover .sub-menu,
+.desktop .#{$prefix}-main-menu>ul>li .sub-menu>li .sub-menu>li:focus-within .sub-menu,
+.desktop .#{$prefix}-main-menu>ul>li .children>li .children>li:hover .children,
+.desktop .#{$prefix}-main-menu>ul>li .children>li .children>li:focus-within .children{
+    opacity: 1;
+    height: auto;
+    top: 0;
+    overflow: visible;
+    visibility: visible;
+}

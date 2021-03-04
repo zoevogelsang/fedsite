@@ -1,0 +1,37 @@
+.#{$prefix}-top-bar{
+    font-weight: $font_semi_bold;
+    background-color: $color_dark_gray;
+    .#{$prefix}-header-tags{
+        display: none;
+        height: $top_bar_height;
+        align-items: center; 
+        @include media(lg){
+            display: flex;
+        }
+    }
+    .#{$prefix}-social-icon-section{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        @include media(lg){
+            width: initial;
+            justify-content: initial;
+            align-items: initial;
+        }
+        .#{$prefix}-social-icons{
+            line-height: $top_bar_height;
+        }
+
+        .#{$prefix}-todays-date{
+            padding: 0 15px;
+            line-height: $top_bar_height;
+            height: $top_bar_height;
+            display: none;
+            @include media(lg){
+                display: block;
+            }
+        }
+    }
+}

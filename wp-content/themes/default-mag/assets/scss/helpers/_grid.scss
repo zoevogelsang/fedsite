@@ -1,0 +1,136 @@
+.container {
+    &.#{$prefix}-no-space{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    &.#{$prefix}-left-space{
+        padding-left: 15px;
+        padding-right: 0;
+    }
+    &.#{$prefix}-custom-container{
+        max-width: 100%;
+        @include media(lg){
+            max-width: 1140px;
+        }
+    }
+}
+  
+.#{$prefix}-d-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.#{$prefix}-row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -7.5px;
+    margin-right: -7.5px;
+    .#{$prefix}-col,
+    .#{$prefix}-col-gap{
+        padding-left: 7.5px;
+        padding-right: 7.5px;
+    }
+}
+  
+.site-content{
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    @include media(xs){
+        width: 540px;
+    }
+    @include media(sm){
+        width: 720px;
+    }
+    @include media(md){
+        width: 960px;
+    }
+    @include media(lg){
+        width: 1140px;
+    }
+
+}
+.home{
+    .site-content{
+        width: 100%;
+        padding-bottom: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+#primary{
+    width: 100%;
+    @include media(md){
+        width: 70%;
+    }
+}
+#secondary{
+    width: 100%;
+    @include media(md){
+        width: 30%;
+    }
+    section{
+        margin-top: 30px;
+    }
+    .container{
+        padding: 0;
+    }
+    
+}
+
+.right-sidebar{
+    #primary{
+        float: left;
+        padding-right: 7.5px;
+        padding-left: 7.5px;
+        @include media(md){
+            padding-left: 0;
+            padding-right: 15px;
+        }
+    }
+    #secondary{
+        float: left;
+        padding-left: 7.5px;
+        padding-right: 7.5px;
+        @include media(md){
+            padding-right: 0;
+            padding-left: 15px;
+        }
+    }
+}
+.left-sidebar{
+    #primary{
+        float: right;
+        padding-left: 7.5px;
+        padding-right: 7.5px;
+        @include media(sm){
+            padding-right: 0;
+            padding-left: 15px;
+        }
+    }
+    #secondary{
+        float: left;
+        padding-right: 7.5px;
+        padding-left: 7.5px;
+        @include media(sm){
+            padding-left: 0;
+            padding-right: 15px;
+        }
+    }
+}
+.no-sidebar{
+    #primary{
+        width: 100%;
+        padding-left: 7.5px;
+        padding-right: 7.5px;
+        @include media(md){
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+    #secondary{
+       display: none;
+    }
+}
+    

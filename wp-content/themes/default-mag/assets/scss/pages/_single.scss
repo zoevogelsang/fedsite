@@ -1,0 +1,71 @@
+.page-header{
+    .archive-description{
+        font-style: italic;
+        font-family: $secondary_font;
+        p{
+            margin-top: 20px;
+            margin-bottom: 0;
+        }
+    }
+    .page-title{
+        margin-top: 30px;
+        margin-bottom: 0;
+        line-height: 1;
+        padding-top: 15px;
+    }
+}
+.#{$prefix}-single-author-info{
+    .#{$prefix}-author-avatar,
+    .#{$prefix}-author-description{
+        margin-top: 30px;
+    }
+    .#{$prefix}-author-avatar{
+        flex: 0 0 100px;
+        max-width: 100px;
+        img{
+           box-shadow: 0 0 5px 5px rgba($color_box_shadow,0.6) ;
+           padding: 15px;
+           border-radius: 5px;
+        }
+    }
+    .#{$prefix}-author-description{
+        flex: 0 0 calc( 100% -100px);
+        max-width: calc( 100% - 100px);
+        .#{$prefix}-author-name{
+            font-size: 1.2rem;
+            font-weight: $font_bold;
+
+        }
+        .#{$prefix}-title{
+            margin-top: 0;
+        }
+        .#{$prefix}-author-email{
+            padding: 10px 0;
+            font-style: italic;
+        }
+    }
+}
+.#{$prefix}-single-page-related-article-section{
+    .#{$prefix}-title{
+        margin-top: 30px;
+    }
+}
+
+.#{$prefix}-single-related-post-list{
+    display: flex;
+    flex-wrap: wrap;
+    @extend %reset-ul;
+    margin-left: -7.5px;
+    margin-right: 7.5px;
+    .#{$prefix}-single-related-post{
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 0 7.5px;
+        margin-top: 30px;
+        @include media(sm){
+            flex: 0 0 33.33%;
+            max-width: 33.33%;
+        }
+       
+    }
+} 

@@ -1,0 +1,16 @@
+.desktop .#{$prefix}-main-menu ul{
+    @extend %reset-ul;
+}
+.desktop .#{$prefix}-main-menu>ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.desktop .#{$prefix}-main-menu>ul>li{
+    font-weight: $font_semi_bold;
+}
+.desktop .#{$prefix}-main-menu>ul>li:hover >a{
+    @extend %secondary-border;
+    background-color: rgba(123,123,123,0.1);
+}
+
+
